@@ -39,10 +39,15 @@ function Widget() {
 
     return (
         <>
-            <TouchableOpacity style={styles.widget_button} onPress={handleOpen}>
-
-                <ChatTeardropDots size={24} weight="bold" color={theme.colors.text_on_brand_color}/>
-
+            <TouchableOpacity 
+                style={styles.widget_button} 
+                onPress={handleOpen}
+            >
+                <ChatTeardropDots 
+                    size={24} 
+                    weight="bold" 
+                    color={theme.colors.text_on_brand_color}
+                />
             </TouchableOpacity>
 
             <BottomSheet 

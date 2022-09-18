@@ -82,13 +82,17 @@ export function Form({ feedbackType, onFeedbackCancelled, onFeedbackSent }: Prop
 
             <View style={styles.header}>
                 <TouchableOpacity onPress={onFeedbackCancelled}>
-                    <ArrowLeft size={24} weight="bold" color={theme.colors.text_secondary} />
+                    <ArrowLeft 
+                        size={24} 
+                        weight="bold" 
+                        color={theme.colors.text_secondary} 
+                    />
                 </TouchableOpacity>
-
                 <View style={styles.titleContainer}>
-                    
-                    <Image source={feedbackTypeInfo.image} style={styles.image}/>
-
+                    <Image 
+                        source={feedbackTypeInfo.image} 
+                        style={styles.image}
+                    />
                     <Text style={styles.titleText}>
                         {feedbackTypeInfo.title}
                     </Text>
@@ -116,7 +120,11 @@ export function Form({ feedbackType, onFeedbackCancelled, onFeedbackSent }: Prop
                         style={styles.buttonShowModal}
                         onPress={() => setModalVisible(true)}
                     >
-                        <Eye size={22} color={theme.colors.text_primary} weight="bold"/>
+                        <Eye 
+                            size={22} 
+                            color={theme.colors.text_primary} 
+                            weight="bold"
+                        />
                     </TouchableOpacity>
                 }
                 
